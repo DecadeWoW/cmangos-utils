@@ -99,6 +99,18 @@ label.light {
   display: inline;
 }
 
+label.mobile {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+span {
+  display: inline-block;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+
 .number {
   background-color: #5fcf80;
   color: #fff;

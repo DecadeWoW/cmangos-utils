@@ -1,7 +1,7 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Classic WoW</title>
+        <title>Decade WoW</title>
         <link rel="stylesheet" href="css/main.css">
 
     </head>
@@ -14,17 +14,20 @@
       <br>
       <form action="register.php" method="post">
 
-        <h1>Classic WoW registration</h1>
+        <h1>Decade WoW 账号注册</h1>
 
         <fieldset>
-          <label for="name">Username:</label>
+          <label.mobile for="name">账号:</label.mobile><span>  * 不支持中文</span>
           <input type="text" id="username" name="username">
 
-          <label for="password">Password:</label>
+          <label.mobile for="password">密码:</label.mobile><span>  * 不支持中文</span>
           <input type="password" id="password" name="user_password">
 
+          <label.mobile for="mobile">手机:</label.mobile><span>  * 请如实填写，用于账号找回</span>
+          <input type="tel" id="mobile" name="mobile">
+
         </fieldset>
-        <button type="submit">Sign Up</button>
+        <button type="submit">注册</button>
       </form>
     </body>
 </html>

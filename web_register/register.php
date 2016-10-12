@@ -9,6 +9,13 @@ $username = "mangos";
 $password = "mangos";
 $dbname = "realmd";
 
+if (strlen($player_username) == 0)
+    echo "账号不能为空";
+else if (strlen($player_password) == 0)
+    echo "密码不能为空";
+else if (strlen($player_mobile) == 0)
+    echo "手机号不能为空";
+else 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception

@@ -1,13 +1,20 @@
 <?php
 header("content-type:text/html; charset=utf-8");
-$player_username = $_POST['username'];
-$player_password = $_POST['user_password'];
-$player_mobile = $_POST['mobile'];
+$player_username = myTrim($_POST['username']);
+$player_password = myTrim($_POST['user_password']);
+$player_mobile = myTrim($_POST['mobile']);
 
 $servername = "127.0.0.1";
 $username = "mangos";
 $password = "mangos";
 $dbname = "realmd";
+
+function myTrim($str)
+{
+ $search = array(" ","　","\n","\r","\t");
+ $replace = array("","","","","");
+ return str_replace($search, $replace, $str);
+}
 
 if (strlen($player_username) == 0)
     echo "账号不能为空";
